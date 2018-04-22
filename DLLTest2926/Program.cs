@@ -20,7 +20,7 @@ namespace DLLTest2926
                 Console.WriteLine("Enter a non-negative integer to calculate its factorial:");
             } while (!int.TryParse(Console.ReadLine(), out input) || input < 0);
 
-            Console.WriteLine(Calculator.Factorial(input));
+            Console.WriteLine(input + " : " + Calculator.Factorial(input));
             Console.ReadKey();
         }
     }
